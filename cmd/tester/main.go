@@ -9,6 +9,10 @@ type config struct {
 	Thing string `env:"THING"`
 }
 
+func doThePrint(c config) {
+	printer.Print(c.Thing)
+}
+
 func main() {
 	c := config{}
 
@@ -16,5 +20,5 @@ func main() {
 		panic(err)
 	}
 
-	printer.Print(c.Thing)
+	doThePrint(c)
 }
