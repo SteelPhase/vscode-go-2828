@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/caarlos0/env"
-	"github.com/steelphase/vscode-go-2828/pkg/printer"
+	"github.com/caarlos0/env/v6"
+	"github.com/steelphase/vscode-go-2828/v2/pkg/printer"
 )
 
 type config struct {
